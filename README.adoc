@@ -23,7 +23,7 @@ ifdef::backend-pdf[]
 include::src/working_with_github_pages/mwp.adoc[]
 endif::[]
 
-Refer to xref:src/working_with_github_pages/mwp.adoc#_робота_з_github_pages
+Refer to xref:src/working_with_github_pages/mwp.adoc#_робота_з_github_pages[] for
 
 stem:[sqrt(4) = 2]
 
