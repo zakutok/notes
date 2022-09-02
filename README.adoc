@@ -1,4 +1,5 @@
 :docinfo:
+:stem:
 :icons: font
 :source-highlighter: rouge
 ifndef::env-github[:toc: left]
