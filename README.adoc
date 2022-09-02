@@ -1,6 +1,6 @@
 :icons: font
 ifndef::env-github[:toc: left]
-:source-highlighter: highlightjs
+:source-highlighter: rouge
 :toc-title: Зміст
 :toclevels: 5
 :numbered:
@@ -19,7 +19,7 @@ endif::[]
 
 include::src/working_with_github_pages/mwp.adoc[]
 
-[source,java,linenums]
+[source,java,linenos]
 ----
 include::src/working_with_github_pages/java/A.java[]
 ----
