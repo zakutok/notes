@@ -1,11 +1,15 @@
 :icons: font
 ifndef::env-github[:toc: left]
-:source-highlighter: rouge
 :toc-title: Зміст
 :toclevels: 5
 :numbered:
 :title: Замітки
 ifdef::env-github[:outfilesuffix: .adoc]
+
+ifdef::env-github[]
+:source-highlighter: rouge
+:rouge-style: colorful
+endif::[]
 
 ifdef::env-github,env-browser[]
 :caution-caption: :fire:
