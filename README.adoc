@@ -18,3 +18,5 @@ endif::[]
 = {title}
 
 == Розділ
+
+include::working-with-github-pages/mwp.adoc[]
