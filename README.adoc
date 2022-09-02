@@ -6,12 +6,9 @@ ifndef::env-github[:toc: left]
 :title: Замітки
 ifdef::env-github[:outfilesuffix: .adoc]
 
-ifdef::env-github[]
+ifdef::env-github,env-browser[]
 :source-highlighter: rouge
 :rouge-style: colorful
-endif::[]
-
-ifdef::env-github,env-browser[]
 :caution-caption: :fire:
 :important-caption: :exclamation:
 :note-caption: :paperclip:
