@@ -12,12 +12,4 @@ ifdef::env-github,env-browser[]
 :warning-caption: :warning:
 endif::[]
 
-ifdef::env-github[]
 = {title}
-endif::[]
-
-ifndef::env-github[]
-= {title}
-endif::[]
-
-endif::[]
