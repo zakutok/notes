@@ -5,7 +5,7 @@
 include::java/A.java[]
 ----
 
-[plantuml, target=diagram-classes, format=png]
+[plantuml, target=diagram-classes, format=svg]
 ....
 class BlockProcessor
 class DiagramBlock
