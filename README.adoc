@@ -1,6 +1,5 @@
 :icons: font
 :source-highlighter: rouge
-:rouge-style: colorful
 ifndef::env-github[:toc: left]
 :toc-title: Зміст
 :toclevels: 5
