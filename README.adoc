@@ -1,3 +1,4 @@
+:docinfo:
 :icons: font
 :source-highlighter: rouge
 ifndef::env-github[:toc: left]
