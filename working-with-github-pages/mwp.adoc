@@ -1,1 +1,8 @@
+ifndef::env-github[:toc: right]
+:toc-title: Зміст
+:toclevels: 5
+
 == Робота з GitHub Pages
+
+=== Підзаголовок
+==== Ще підзаголовок

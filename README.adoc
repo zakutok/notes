@@ -1,7 +1,7 @@
 :icons: font
 ifndef::env-github[:toc: left]
 :toc-title: Зміст
-:toclevels: 5
+:toclevels: 2
 :numbered:
 :title: Замітки
 ifdef::env-github[:outfilesuffix: .adoc]
@@ -16,7 +16,5 @@ ifdef::env-github,env-browser[]
 endif::[]
 
 = {title}
-
-== Розділ
 
 include::working-with-github-pages/mwp.adoc[]
