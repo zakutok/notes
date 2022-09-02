@@ -7,7 +7,7 @@ ifndef::env-github[:toc: left]
 ifdef::env-github[:outfilesuffix: .adoc]
 
 ifdef::env-github,env-browser[]
-
+:source-highlighter: highlightjs
 :caution-caption: :fire:
 :important-caption: :exclamation:
 :note-caption: :paperclip:
