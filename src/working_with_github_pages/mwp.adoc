@@ -1,0 +1,6 @@
+== Робота з GitHub Pages
+
+[source,java,linenos]
+----
+include::java/A.java[]
+----

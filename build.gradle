@@ -1,0 +1,43 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+projectDir.eachDirMatch("src") {
+    src ->
+        src.eachDir{
+            d ->
+                if (d.name != 'main' && d.name != 'test') {
+
+                    sourceSets.create(d.name) {
+                        compileClasspath += sourceSets.main.output
+                        runtimeClasspath += sourceSets.main.output
+                    }
+
+                    configurations.getByName("${d.name}Implementation").extendsFrom(configurations.getByName("implementation"))
+                    configurations.getByName("${d.name}RuntimeOnly").extendsFrom(configurations.getByName("runtimeOnly"))
+                }
+        }
+}
+
+compileJava {
+    options.compilerArgs << '-parameters'
+}
+
+dependencies {
+    implementation 'com.google.guava:guava:31.1-jre'
+    implementation 'net.sourceforge.plantuml:plantuml:1.2021.9'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.2'
+    testImplementation 'org.assertj:assertj-core:3.23.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.2'
+}
+
+test {
+    useJUnitPlatform()
+}
