@@ -18,3 +18,8 @@ endif::[]
 = {title}
 
 include::src/working_with_github_pages/mwp.adoc[]
+
+[source,java,linenums]
+----
+include::src/working_with_github_pages/java/A.java[]
+----
