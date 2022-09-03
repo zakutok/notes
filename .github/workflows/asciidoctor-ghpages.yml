@@ -44,7 +44,7 @@ jobs:
         uses: manoelcampos/asciidoctor-ghpages-action@v2.2.4
         with:
           pdf_build: true
-          asciidoctor_params: -r asciidoctor-diagram --attribute=nofooter -a source-highlighter=rouge -a docinfo=shared -a docinfodir=../../common
+          asciidoctor_params: -r asciidoctor-diagram --attribute=nofooter -a source-highlighter=rouge -a docinfodir=../../common -a docinfo=shared
           # adoc_file_ext: .ascii # default is .adoc
           # source_dir: docs/ # default is .
           # slides_build: true
