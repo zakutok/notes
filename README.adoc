@@ -34,3 +34,7 @@ endif::[]
 ifndef::backend-pdf[]
 xref:src/multithreading/multithreading.adoc[Багатопоточність]
 endif::[]
+
+++++
+include::src/working_with_github_pages/mwp.adoc[]
+++++
