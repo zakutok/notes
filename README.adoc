@@ -20,7 +20,7 @@ endif::[]
 
 = {title}
 
-ifdef::env-pdf[]
+ifdef::backend-pdf[]
 :toc: left
 :toc-title: Зміст
 :toclevels: 5
@@ -30,6 +30,6 @@ ifdef::env-pdf[]
 include::src/multithreading/multithreading.adoc[]
 endif::[]
 
-ifndef::env-pdf[]
+ifndef::backend-pdf[]
 xref:src/multithreading/multithreading.adoc[Багатопоточність]
 endif::[]
