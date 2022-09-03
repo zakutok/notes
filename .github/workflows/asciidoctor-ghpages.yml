@@ -56,7 +56,7 @@ jobs:
         uses: manoelcampos/asciidoctor-ghpages-action@v2.2.4
         with:
           pdf_build: true
-          asciidoctor_params: -r asciidoctor-diagram --attribute=nofooter --attribute=gnuplot=/usr/bin/gnuplot
+          asciidoctor_params: -r asciidoctor-diagram --attribute=nofooter -a=gnuplot=/usr/bin/gnuplot
           # adoc_file_ext: .ascii # default is .adoc
           # source_dir: docs/ # default is .
           # slides_build: true
