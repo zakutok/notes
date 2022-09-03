@@ -20,16 +20,5 @@ endif::[]
 
 = {title}
 
-include::src/working_with_github_pages/mwp.adoc[]
+//include::src/working_with_github_pages/mwp.adoc[]
 include::src/multithreading/multithreading.adoc[]
-
-Refer to xref:src/working_with_github_pages/mwp.adoc#_робота_з_github_pages[] for
-
-stem:[sqrt(4) = 2]
-
-Water (stem:[H_2O]) is a critical component.
-
-[asciimath]
-++++
-sqrt(4) = 2
-++++
