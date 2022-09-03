@@ -3,6 +3,12 @@
 :stem:
 :icons: font
 :source-highlighter: rouge
+ifdef::backend-pdf[]
+:toc:
+:toc-title: Зміст
+:toclevels: 5
+:numbered:
+endif::[]
 //ifndef::env-github[:toc: left]
 //:toc-title: Зміст
 //:toclevels: 5
@@ -21,11 +27,6 @@ endif::[]
 = {title}
 
 ifdef::backend-pdf[]
-:toc: left
-:toc-title: Зміст
-:toclevels: 5
-:numbered:
-
 //include::src/working_with_github_pages/mwp.adoc[]
 include::src/multithreading/multithreading.adoc[]
 endif::[]
