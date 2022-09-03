@@ -1,4 +1,4 @@
-:docinfo:
+:docinfo: shared,private-footer
 :stem:
 :icons: font
 :source-highlighter: rouge
@@ -19,9 +19,8 @@ endif::[]
 
 = {title}
 
-ifdef::backend-pdf[]
 include::src/working_with_github_pages/mwp.adoc[]
-endif::[]
+include::src/ad/ad.adoc[]
 
 Refer to xref:src/working_with_github_pages/mwp.adoc#_робота_з_github_pages[] for
 
