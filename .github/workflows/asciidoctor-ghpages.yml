@@ -36,8 +36,8 @@ jobs:
       - name: install rouge
         run: sudo apt-get install -y ruby-rouge
 
-      - name: install jdk
-        run: sudo apt-get install -y openjdk-18-jdk
+#      - name: install jdk
+#        run: sudo apt-get install -y openjdk-18-jdk
 
       # Includes the AsciiDoctor GitHub Pages Action to convert adoc files to html and publish to gh-pages branch
       - name: asciidoctor-ghpages
