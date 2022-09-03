@@ -21,7 +21,7 @@ endif::[]
 = {title}
 
 include::src/working_with_github_pages/mwp.adoc[]
-include::src/ad/ad.adoc[]
+include::src/multithreading/multithreading.adoc[]
 
 Refer to xref:src/working_with_github_pages/mwp.adoc#_робота_з_github_pages[] for
 
