@@ -1,5 +1,5 @@
-:docinfodir: ../../common
-:docinfo: shared
+//:docinfodir: ../../common
+//:docinfo: shared
 
 == Багатопоточність
 
