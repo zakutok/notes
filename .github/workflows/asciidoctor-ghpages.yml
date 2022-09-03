@@ -48,7 +48,7 @@ jobs:
           # adoc_file_ext: .ascii # default is .adoc
           # source_dir: docs/ # default is .
           # slides_build: true
-          # pre_build:
+          pre_build: ./gradlew clean assemble
           # post_build:
       - name: Setup Pages
         uses: actions/configure-pages@v2
