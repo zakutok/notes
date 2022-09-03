@@ -30,11 +30,6 @@ plot [0:23] x**2*(45-2*x), 3350
 ....
 
 ++++
-<p>
-Content in a passthrough block is passed to the output unprocessed.
-That means you can include raw HTML, like this embedded Gist:
-</p>
-
 <script src="https://utteranc.es/client.js"
         repo="zakutok/notes"
         issue-term="title"

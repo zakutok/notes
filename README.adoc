@@ -1,4 +1,5 @@
-:docinfo: shared,private-footer
+:docinfodir: common
+:docinfo: shared
 :stem:
 :icons: font
 :source-highlighter: rouge
