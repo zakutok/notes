@@ -42,8 +42,8 @@ jobs:
 #      - name: install asciidoctor-mathematical
 #        run: gem install asciidoctor-mathematical
 
-      - name: install plantuml
-        run: sudo apt-get install -y plantuml
+#      - name: install plantuml
+#        run: sudo apt-get install -y plantuml
 
 #      - name: install gnuplot
 #        run: sudo apt-get install -y gnuplot
