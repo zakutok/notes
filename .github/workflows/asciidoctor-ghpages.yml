@@ -49,8 +49,8 @@ jobs:
         run: sudo apt-get install -y gnuplot
 
       - name: install asciidoctor-chart
-        run: sudo apt-get install -y asciidoctor-chart
-#        run: sudo gem install asciidoctor-chart --pre
+#        run: sudo apt-get install -y asciidoctor-chart
+        run: sudo gem install asciidoctor-chart --pre
 
 #      - name: change PATH
 #        run:
@@ -60,7 +60,7 @@ jobs:
         uses: manoelcampos/asciidoctor-ghpages-action@v2.2.4
         with:
           pdf_build: true
-          asciidoctor_params: -r asciidoctor-diagram -r asciidoctor-chart --attribute=nofooter -a=gnuplot=/usr/local/bin/gnuplot
+          asciidoctor_params: -r asciidoctor-diagram --attribute=nofooter -a gnuplot=/usr/bin/gnuplot
           # adoc_file_ext: .ascii # default is .adoc
           # source_dir: docs/ # default is .
           # slides_build: true
