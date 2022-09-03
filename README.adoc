@@ -22,3 +22,5 @@ endif::[]
 
 //include::src/working_with_github_pages/mwp.adoc[]
 include::src/multithreading/multithreading.adoc[]
+
+xref:src/multithreading/multithreading.adoc[Багатопоточність]
