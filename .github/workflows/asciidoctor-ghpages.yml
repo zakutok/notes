@@ -35,16 +35,12 @@ jobs:
 
       - name: install rouge
         run: sudo apt-get install -y ruby-rouge
-
-      - name: install asciidoctor-multipage
-        run: sudo gem install asciidoctor-multipage
-
       # Includes the AsciiDoctor GitHub Pages Action to convert adoc files to html and publish to gh-pages branch
       - name: asciidoctor-ghpages
         uses: manoelcampos/asciidoctor-ghpages-action@v2.2.4
         with:
           pdf_build: true
-          asciidoctor_params: -r asciidoctor-diagram -r asciidoctor-multipage -b multipage_html5 --attribute=nofooter -a source-highlighter=rouge -a docinfodir='../../common' -a docinfo=shared
+          asciidoctor_params: -r asciidoctor-diagram --attribute=nofooter -a source-highlighter=rouge -a docinfodir='../../../common' -a docinfo=shared
           # adoc_file_ext: .ascii # default is .adoc
           # source_dir: docs/ # default is .
           # slides_build: true
