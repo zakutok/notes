@@ -1,0 +1,13 @@
+ifndef::backend-pdf[]
+++++
+<script src="https://utteranc.es/client.js"
+        repo="zakutok/notes"
+        issue-term="{custom}"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+++++
+endif::[]
+
+{custom}

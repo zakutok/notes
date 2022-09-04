@@ -4,3 +4,9 @@
 ----
 include::C.java[]
 ----
+
+:custom: gg
+:custom: ff
+
+include::../../../../common/comments.adoc[]
+

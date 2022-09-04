@@ -42,18 +42,6 @@ include::src/multithreading/java/fork_join/fork_join.adoc[]
 
 Test 1
 
-ifndef::backend-pdf[]
-++++
-<script src="https://utteranc.es/client.js"
-        repo="zakutok/notes"
-        issue-term="Test 1"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>
-++++
-endif::[]
-
 Test 2
 
 ++++
