@@ -38,6 +38,8 @@ xref:src/multithreading/multithreading.adoc[Багатопоточність]
 xref:src/working_with_github_pages/mwp.adoc[Робота з GitHub Pages]
 endif::[]
 
+include::src/multithreading/java/fork_join/fork_join.adoc[]
+
 Test 1
 
 ifndef::backend-pdf[]
@@ -88,5 +90,3 @@ if
         async>
 </script>
 ++++
-
-include::src/multithreading/java/fork_join/fork_join.adoc[]
