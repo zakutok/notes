@@ -52,7 +52,7 @@ jobs:
           # source_dir: docs/ # default is .
           # slides_build: true
 #          pre_build: ./gradlew assemble
-          pre_build: where gnuplot
+          pre_build: which gnuplot
           # post_build:
       - name: Setup Pages
         uses: actions/configure-pages@v2
