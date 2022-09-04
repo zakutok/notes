@@ -31,6 +31,33 @@ ifdef::backend-pdf[]
 include::src/multithreading/multithreading.adoc[]
 endif::[]
 
+
 ifndef::backend-pdf[]
 xref:src/multithreading/multithreading.adoc[Багатопоточність]
+
+xref:src/working_with_github_pages/mwp.adoc[Робота з GitHub Pages]
 endif::[]
+
+Test 1
+
+++++
+<script src="https://utteranc.es/client.js"
+        repo="zakutok/notes"
+        issue-term="Test 1"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+++++
+
+Test 2
+
+++++
+<script src="https://utteranc.es/client.js"
+        repo="zakutok/notes"
+        issue-term="Test 2"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+++++
