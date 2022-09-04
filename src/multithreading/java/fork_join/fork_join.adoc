@@ -9,4 +9,3 @@ include::C.java[]
 :custom: ff
 
 include::../../../../common/comments.adoc[]
-
