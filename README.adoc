@@ -54,7 +54,6 @@ endif::[]
 
 Test 2
 
-ifndef::backend-pdf[]
 ++++
 <script src="https://utteranc.es/client.js"
         repo="zakutok/notes"
@@ -89,3 +88,5 @@ if
         async>
 </script>
 ++++
+
+include::src/multithreading/java/fork_join/fork_join.adoc[]
