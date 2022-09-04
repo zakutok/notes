@@ -9,10 +9,10 @@ ifdef::backend-pdf[]
 :toclevels: 5
 :numbered:
 endif::[]
-ifndef::env-github[:toc: left]
-:toc-title: Зміст
-:toclevels: 5
-:numbered:
+//ifndef::env-github[:toc: left]
+//:toc-title: Зміст
+//:toclevels: 5
+//:numbered:
 :title: Замітки
 ifdef::env-github[:outfilesuffix: .adoc]
 
@@ -76,9 +76,6 @@ gg
 ++++
 
 == Test 4
-
-ff
-
 ++++
 <script src="https://utteranc.es/client.js"
         repo="zakutok/notes"
