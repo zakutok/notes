@@ -61,3 +61,25 @@ Test 2
         async>
 </script>
 ++++
+
+== Test 3
+++++
+<script src="https://utteranc.es/client.js"
+        repo="zakutok/notes"
+        issue-term="url"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+++++
+
+== Test 4
+++++
+<script src="https://utteranc.es/client.js"
+        repo="zakutok/notes"
+        issue-term="url"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+++++
