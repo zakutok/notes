@@ -1,4 +1,5 @@
 ifndef::backend-pdf[]
+[code, subs="attributes"]
 ++++
 <script src="https://utteranc.es/client.js"
         repo="zakutok/notes"
