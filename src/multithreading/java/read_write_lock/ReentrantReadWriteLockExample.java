@@ -14,7 +14,7 @@ public class ReentrantReadWriteLockExample {
 
     public static void main(String[] args) throws InterruptedException {
 
-        var res = new ArrayList<>(List.of(1, 2));
+        var res = new ArrayList<>(List.of(1));
 
         var reentrantReadWriteLock = new ReentrantReadWriteLock();
 
@@ -40,8 +40,8 @@ public class ReentrantReadWriteLockExample {
             return null;
         };
 
-        var readThreadsNumber = 15;
-        var writeThreadsNumber = 5;
+        var readThreadsNumber = 10;
+        var writeThreadsNumber = 3;
         var nThreads = readThreadsNumber + writeThreadsNumber;
         var executorService = Executors.newFixedThreadPool(nThreads);
 
