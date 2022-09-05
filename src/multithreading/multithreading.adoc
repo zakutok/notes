@@ -1,3 +1,4 @@
 == Багатопоточність
 
 include::java/fork_join/fork_join.adoc[]
+include::java/read_write_lock/read_write_lock.adoc[]
