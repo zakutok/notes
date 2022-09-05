@@ -1,3 +1,44 @@
 === ReadWriteLock
 
 Текст
+
+[plantuml, target=diagram-classes, format=png]
+....
+class BlockProcessor
+class DiagramBlock
+class DitaaBlock
+class PlantUmlBlock
+
+BlockProcessor <|-- DiagramBlock
+DiagramBlock <|-- DitaaBlock
+DiagramBlock <|-- PlantUmlBlock
+....
+
+[gnuplot]
+....
+set terminal pngcairo size 600,300
+
+set style line 1 lc rgb '#8b1a0e' pt 1 ps 1 lt 1 lw 2 # --- red
+set style line 2 lc rgb '#5e9c36' pt 6 ps 1 lt 1 lw 2 # --- green
+
+set style line 11 lc rgb '#808080' lt 1
+set border 3 back ls 11
+set tics nomirror
+
+set style line 12 lc rgb '#808080' lt 0 lw 1
+set grid back ls 12
+
+set title "Графік об'єму коробки V(x)" font ",20"
+set xlabel "x, см"
+set ylabel "V(x), см"
+set nokey
+set samples 50
+set style data points
+
+set yrange [0:3500]
+
+set label 1 "a" at 14.242,3350 point pointtype 4
+set label 2 "b" at 15.733,3350 point pointtype 4
+
+plot [0:23] x**2*(45-2*x), 3350
+....
