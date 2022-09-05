@@ -12,22 +12,22 @@
 
 Приклад використання:
 
-[source,java,linenos]
+[source,java,linenos,%collapsible]
 ----
 include::ReentrantReadWriteLockExample.java[]
 ----
 
 Вивід в консоль:
 
-[source,bash,linenos]
+[source,bash,linenos,%collapsible]
 ----
 in read lock: readLockCount = 1 isWriteLocked = false [1, 2]
-in read lock: readLockCount = 2 isWriteLocked = false [1, 2] // <1>
+in read lock: readLockCount = 2 isWriteLocked = false [1, 2]         // <1>
 in read lock: readLockCount = 3 isWriteLocked = false [1, 2]
 in read lock: readLockCount = 4 isWriteLocked = false [1, 2]
 in read lock: readLockCount = 5 isWriteLocked = false [1, 2]
 in read lock: readLockCount = 6 isWriteLocked = false [1, 2]
-in write lock: readLockCount = 0 isWriteLocked = true [1, 2, 3] // <2>
+in write lock: readLockCount = 0 isWriteLocked = true [1, 2, 3]      // <2>
 in write lock: readLockCount = 0 isWriteLocked = true [1, 2, 3, 4]
 in write lock: readLockCount = 0 isWriteLocked = true [1, 2, 3, 4, 5]
 in read lock: readLockCount = 1 isWriteLocked = false [1, 2, 3, 4, 5]
@@ -44,4 +44,3 @@ in read lock: readLockCount = 3 isWriteLocked = false [1, 2, 3, 4, 5, 6, 7]
 ----
 <1> Наявність декількох блокувань одночасно може бути лише при блокуванні для читання
 <2> Блокування для запису може бути отримане тільки одне й лише тоді коли немає інших блокувань
-
