@@ -5,6 +5,9 @@ set -e
 
 OWNER="$(echo "$GITHUB_REPOSITORY" | cut -d'/' -f 1)"
 
+INPUT_SOURCE_DIR=.
+# INPUT_ADOC_FILE_EXT=.adoc
+
 if [[ "$INPUT_ADOC_FILE_EXT" != .* ]]; then
     INPUT_ADOC_FILE_EXT=".$INPUT_ADOC_FILE_EXT";
 fi
