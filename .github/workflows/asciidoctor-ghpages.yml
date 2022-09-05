@@ -48,6 +48,9 @@ jobs:
       - name: install asciidoctor-diagram
         run: sudo gem install asciidoctor-diagram
 
+      - name: install asciidoctor-chart
+        run: sudo gem install asciidoctor-chart --pre
+
       - name: run build script
         run: ./.github/scripts/entrypoint.sh
         shell: bash

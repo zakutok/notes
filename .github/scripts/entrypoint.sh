@@ -49,7 +49,7 @@ eval "$INPUT_PRE_BUILD"
 
 if [[ $INPUT_SLIDES_SKIP_ASCIIDOCTOR_BUILD == false ]]; then
     echo "Converting AsciiDoc files to HTML"
-    find . -name "*$INPUT_ADOC_FILE_EXT" -exec asciidoctor -r asciidoctor-multipage -r asciidoctor-diagram -b multipage_html5 -a multipage-level=3 $INPUT_ASCIIDOCTOR_PARAMS {} \;
+    find . -name "*$INPUT_ADOC_FILE_EXT" -exec asciidoctor -r asciidoctor-multipage -r asciidoctor-diagram -r asciidoctor-chart -b multipage_html5 -a multipage-level=3 $INPUT_ASCIIDOCTOR_PARAMS {} \;
     find . -name "README.html" -execdir ln -s "README.html" "index.html" \;
     find . -name "*$INPUT_ADOC_FILE_EXT" -exec git rm -f --cached {} \;
 fi

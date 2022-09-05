@@ -42,3 +42,19 @@ set label 2 "b" at 15.733,3350 point pointtype 4
 
 plot [0:23] x**2*(45-2*x), 3350
 ....
+
+stem:[sqrt(4) = 2]
+
+Water (stem:[H_2O]) is a critical component.
+
+[asciimath]
+++++
+sqrt(4) = 2
+++++
+
+[chart,line]
+....
+January,February,March,April,May,June,July
+28,48,40,19,86,27,90
+65,59,80,81,56,55,40
+....
