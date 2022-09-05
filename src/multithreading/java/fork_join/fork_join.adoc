@@ -1,18 +1,6 @@
-ifndef::backend-pdf[]
-:toc: left
-:toc-title: Зміст
-:toclevels: 5
-:numbered:
-endif::[]
-
 === Fork Join
 
 [source,java,linenos]
 ----
 include::C.java[]
 ----
-
-:custom: gg
-:custom: ff
-
-include::../../../../common/comments.adoc[]

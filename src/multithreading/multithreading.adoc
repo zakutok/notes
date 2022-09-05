@@ -3,6 +3,6 @@
 
 == Багатопоточність
 
-//include::java/fork_join/fork_join.adoc[]
+include::java/fork_join/fork_join.adoc[]
 
-xref:java/fork_join/fork_join.adoc[Fork Join]
+//xref:java/fork_join/fork_join.adoc[Fork Join]

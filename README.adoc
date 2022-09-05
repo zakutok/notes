@@ -3,16 +3,10 @@
 :stem:
 :icons: font
 :source-highlighter: rouge
-ifdef::backend-pdf[]
-:toc:
+ifndef::env-github[:toc: left]
 :toc-title: Зміст
 :toclevels: 5
 :numbered:
-endif::[]
-//ifndef::env-github[:toc: left]
-//:toc-title: Зміст
-//:toclevels: 5
-//:numbered:
 :title: Замітки
 ifdef::env-github[:outfilesuffix: .adoc]
 
@@ -26,55 +20,5 @@ endif::[]
 
 = {title}
 
-ifdef::backend-pdf[]
-//include::src/working_with_github_pages/mwp.adoc[]
+include::src/working_with_github_pages/mwp.adoc[]
 include::src/multithreading/multithreading.adoc[]
-endif::[]
-
-
-ifndef::backend-pdf[]
-xref:src/multithreading/multithreading.adoc[Багатопоточність]
-
-xref:src/working_with_github_pages/mwp.adoc[Робота з GitHub Pages]
-endif::[]
-
-include::src/multithreading/java/fork_join/fork_join.adoc[]
-
-Test 1
-
-Test 2
-
-++++
-<script src="https://utteranc.es/client.js"
-        repo="zakutok/notes"
-        issue-term="Test 2"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>
-++++
-
-== Test 3
-gg
-
-if
-++++
-<script src="https://utteranc.es/client.js"
-        repo="zakutok/notes"
-        issue-term="url"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>
-++++
-
-== Test 4
-++++
-<script src="https://utteranc.es/client.js"
-        repo="zakutok/notes"
-        issue-term="url"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>
-++++
