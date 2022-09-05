@@ -17,6 +17,8 @@
 include::ReentrantReadWriteLockExample.java[]
 ----
 
+Вивід в консоль:
+
 [source,bash,linenos]
 ----
 in read lock: readLockCount = 1 isWriteLocked = false [1, 2]
@@ -40,6 +42,6 @@ in read lock: readLockCount = 4 isWriteLocked = false [1, 2, 3, 4, 5, 6, 7]
 in read lock: readLockCount = 2 isWriteLocked = false [1, 2, 3, 4, 5, 6, 7]
 in read lock: readLockCount = 3 isWriteLocked = false [1, 2, 3, 4, 5, 6, 7]
 ----
-<1> Тільки блокувань для читання може бути декілька в один і той же момент часу отриманих різними потоками
-<2> Блокування для запису може бути отримане тільки одне і лише коли немає інших блокувань
+<1> Наявність декількох блокувань одночасно може бути лише при блокуванні для читання
+<2> Блокування для запису може бути отримане тільки одне й лише тоді коли немає інших блокувань
 
