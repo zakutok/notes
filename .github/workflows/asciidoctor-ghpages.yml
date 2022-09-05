@@ -45,9 +45,6 @@ jobs:
       - name: run asciidoctor -V
         run: asciidoctor -r asciidoctor-multipage -V
 
-      - name: install apk
-        run: sudo apt-get install -y apk
-
       - name: run build script
         run: ./.github/scripts/entrypoint.sh
         shell: bash
