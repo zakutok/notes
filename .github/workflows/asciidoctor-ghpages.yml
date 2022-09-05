@@ -46,7 +46,7 @@ jobs:
         run: asciidoctor -r asciidoctor-multipage -V
 
       - name: Run build script
-        run: sudo ./.github/scripts/entrypoint.sh
+        run: ./.github/scripts/entrypoint.sh
         shell: bash
 
       # Includes the AsciiDoctor GitHub Pages Action to convert adoc files to html and publish to gh-pages branch
