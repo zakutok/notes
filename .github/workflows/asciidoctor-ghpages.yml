@@ -45,10 +45,10 @@ jobs:
       - name: run asciidoctor -V
         run: asciidoctor -r asciidoctor-multipage -V
 
-      - name: run where apk
-        run: where apk
+      - name: install apk
+        run: sudo apt-get install -y apk
 
-      - name: Run build script
+      - name: run build script
         run: ./.github/scripts/entrypoint.sh
         shell: bash
 
