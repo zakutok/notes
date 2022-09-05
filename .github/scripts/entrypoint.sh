@@ -10,7 +10,7 @@ if [[ "$INPUT_ADOC_FILE_EXT" != .* ]]; then
 fi
 
 echo "Configure git"
-apk add openssh-client -q > /dev/null
+/usr/sbin/apk add openssh-client -q > /dev/null
 
 git config --global --add safe.directory /github/workspace
 git fetch --all
