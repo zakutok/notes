@@ -23,4 +23,4 @@ endif::[]
 
 include::src/multithreading/multithreading.adoc[]
 
-include::src/working_with_github_pages/mwp.adoc[]
+//include::src/working_with_github_pages/mwp.adoc[]
