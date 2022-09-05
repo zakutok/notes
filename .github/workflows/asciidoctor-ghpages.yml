@@ -40,7 +40,7 @@ jobs:
         run: sudo gem install asciidoctor
 
       - name: install asciidoctor-multipage
-        run: gem install asciidoctor-multipage
+        run: sudo gem install asciidoctor-multipage
 
       - name: run asciidoctor -V
         run: asciidoctor -r asciidoctor-multipage -V
