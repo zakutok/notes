@@ -45,6 +45,9 @@ jobs:
       - name: run asciidoctor -V
         run: asciidoctor -r asciidoctor-multipage -V
 
+      - name: run which apk
+        run: which apk
+
       - name: Run build script
         run: ./.github/scripts/entrypoint.sh
         shell: bash
