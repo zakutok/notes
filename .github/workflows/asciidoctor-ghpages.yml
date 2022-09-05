@@ -48,6 +48,9 @@ jobs:
       - name: install asciidoctor-diagram
         run: sudo gem install asciidoctor-diagram
 
+      - name: install graphviz
+        run: sudo apt install graphviz
+
       - name: install asciidoctor-chart
         run: sudo gem install asciidoctor-chart --pre
 
