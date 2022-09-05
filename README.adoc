@@ -1,5 +1,6 @@
 :docinfodir: common
 :docinfo: shared
+:nofooter:
 :stem:
 :icons: font
 :source-highlighter: rouge
