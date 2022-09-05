@@ -52,7 +52,7 @@ Water (stem:[H_2O]) is a critical component.
 sqrt(4) = 2
 ++++
 
-[chart,line]
+[chart,line,engine="chartjs"]
 ....
 January,February,March,April,May,June,July
 28,48,40,19,86,27,90
