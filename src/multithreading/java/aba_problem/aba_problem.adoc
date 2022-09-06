@@ -104,6 +104,7 @@ end note
 
 Приклад:
 
+.Приклад неправильної реалізації роботи зі зв'язаним списком на основі CAS
 [source,java,linenos]
 ----
 include::ABAProblem.java[]
@@ -111,6 +112,7 @@ include::ABAProblem.java[]
 
 Вивід в консоль:
 
+.Вивід консолі
 [source,bash,linenos]
 ----
 Given list: ABANode[val=A, next=ABANode[val=B, next=ABANode[val=C, next=ABANode[val=D, next=null]]]]

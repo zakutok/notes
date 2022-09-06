@@ -8,6 +8,8 @@ ifndef::env-github[:toc: left]
 :toc-title: Зміст
 :toclevels: 5
 :numbered:
+:listing-number:
+:listing-caption: Listing
 :title: Замітки
 ifdef::env-github[:outfilesuffix: .adoc]
 

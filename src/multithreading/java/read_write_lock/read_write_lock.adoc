@@ -12,6 +12,7 @@
 
 Приклад використання:
 
+.Приклад використання ReentrantReadWriteLock
 [source,java,linenos]
 ----
 include::ReentrantReadWriteLockExample.java[]
@@ -19,6 +20,7 @@ include::ReentrantReadWriteLockExample.java[]
 
 Вивід в консоль:
 
+.Вивід консолі
 [source,bash,linenos]
 ----
 in read lock: readLockCount = 1 isWriteLocked = false [1]
