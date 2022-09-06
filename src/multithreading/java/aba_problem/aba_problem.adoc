@@ -102,15 +102,11 @@ head=B->null
 end note
 ----
 
-Приклад:
-
 .Приклад неправильної реалізації роботи зі зв'язаним списком на основі CAS
 [source,java,linenos]
 ----
 include::ABAProblem.java[]
 ----
-
-Вивід в консоль:
 
 .Вивід консолі
 [source,bash,linenos]
