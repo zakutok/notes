@@ -70,7 +70,7 @@ public class ABAProblem {
                 t1Head = headAtomicReference.get();
                 var second = t1Head.next;
 
-                imitateABAProblem(t2); // just to guarantee thread order to reproduce ABA problem
+                imitateABAProblem(t2); // just to guarantee right thread order to reproduce ABA problem
 
                 updated = headAtomicReference.compareAndSet(t1Head, second);
                 System.out.println("t1: updated = " + updated + ", list: " + headAtomicReference.get());
@@ -89,7 +89,7 @@ public class ABAProblem {
     private static void imitateABAProblem(Thread t2) {
         try {
             t2.start();
-            t2.join(); // just to imitate ABA problem
+            t2.join();
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
