@@ -23,7 +23,6 @@ t1 -> r: читає "A"
 [plantuml,target=aba_problem_in_naive_cas_alog_realization_sequence_diagram,format=svg]
 ----
 skinparam defaultFontName FONT_FIRA_MONO
-skinparam monochrome true
 autonumber
 participant t1 as "Потік 1"
 participant r as "Зв'язаний список\n з наївним CAS алгоритмом"
