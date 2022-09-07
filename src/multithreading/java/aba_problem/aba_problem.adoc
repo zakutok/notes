@@ -7,6 +7,7 @@
 .Проблема ABA
 [plantuml,target=aba_problem_sequence_diagram,format=svg]
 ----
+skinparam defaultFontName FONT_FIRA_MONO
 autonumber
 participant t1 as "Потік 1"
 participant r as "Ресурс"

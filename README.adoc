@@ -11,7 +11,6 @@ ifndef::env-github[:toc: left]
 :listing-number:
 :listing-caption: Лістинг
 :figure-caption: Рисунок
-:title: Замітки
 ifdef::env-github[:outfilesuffix: .adoc]
 
 ifdef::env-github,env-browser[]
@@ -22,7 +21,7 @@ ifdef::env-github,env-browser[]
 :warning-caption: :warning:
 endif::[]
 
-= {title}
+= Замітки
 
 include::src/multithreading/multithreading.adoc[]
 
