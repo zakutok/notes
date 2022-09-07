@@ -24,7 +24,7 @@ t1 -> r: читає "A"
 Наступна діаграма зображає цю проблему на прикладі роботи зі зв'язаним списком який має наївну реалізацію алгоритму без блокування (CAS алгоритму):
 
 .Приклад неправильної реалізації роботи зі зв'язаним списком на основі CAS
-[plantuml,target=aba_problem_in_naive_cas_alog_realization_sequence_diagram,format=svg]
+[plantuml,target=aba_problem_in_naive_cas_algo_realization_sequence_diagram,format=svg]
 ----
 skinparam defaultFontName FONT_FIRA_MONO
 autonumber
@@ -77,10 +77,12 @@ t2 -> r: змінює head на t2_head CAS операцією
 note over r
 head=C->D->null
 end note
+group Небезпечна модифікація
 t2->t2: видаляє посилання на C у елемента B
 note over t1
 t1_head=B->null
 end note
+end group
 note over t2
 Отримує завдання вставити A першим елементом
 end note
