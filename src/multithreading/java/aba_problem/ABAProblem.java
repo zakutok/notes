@@ -1,6 +1,5 @@
 package aba_problem;
 
-import java.util.Objects;
 import java.util.concurrent.atomic.AtomicReference;
 
 public class ABAProblem {
