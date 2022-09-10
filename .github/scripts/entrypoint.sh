@@ -56,6 +56,8 @@ if [[ $INPUT_SLIDES_SKIP_ASCIIDOCTOR_BUILD == false ]]; then
     asciidoctor -r asciidoctor-diagram -b docbook ./**/*.adoc
     find ./src/ -name "*.xml" -exec sh -c 'pandoc -f docbook -t gfm "${0}" -o "${0%.xml}.md"' {} \;
     find ./ -name "README.xml" -exec sh -c 'pandoc -f docbook -t gfm "${0}" -o "${0%.xml}.md"' {} \;
+    find . -name "*.md" -exec git add -f {} \;
+    find . -name "*.svg" -exec git add -f {} \;
 
     find . -name "*$INPUT_ADOC_FILE_EXT" -exec git rm -f --cached {} \;
 fi
