@@ -51,6 +51,9 @@ jobs:
       - name: install graphviz
         run: sudo apt install graphviz
 
+      - name: install pandoc
+        run: sudo apt install pandoc
+
       - name: run build script
         run: ./.github/scripts/entrypoint.sh
         shell: bash
