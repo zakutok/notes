@@ -52,7 +52,7 @@ if [[ $INPUT_SLIDES_SKIP_ASCIIDOCTOR_BUILD == false ]]; then
     find . -name "*$INPUT_ADOC_FILE_EXT" -exec asciidoctor -r asciidoctor-multipage -r asciidoctor-diagram -b multipage_html5 -a multipage-level=2 $INPUT_ASCIIDOCTOR_PARAMS {} \;
     find . -name "README.html" -execdir ln -s "README.html" "index.html" \;
 
-    find ./ -name "*.adoc" -print0 | xargs -0 sed -i "" "/^\s*include::.*\.adoc.*$/d"
+    find . -name "*.adoc" -print0 | xargs -0 sed -i "" "/^\s*include::.*\.adoc.*$/d"
     asciidoctor -r asciidoctor-diagram -b docbook ./**/*.adoc
     find ./src/ -name "*.xml" -exec sh -c 'pandoc -f docbook -t gfm "${0}" -o "${0%.xml}.md"' {} \;
     find ./ -name "README.xml" -exec sh -c 'pandoc -f docbook -t gfm "${0}" -o "${0%.xml}.md"' {} \;
