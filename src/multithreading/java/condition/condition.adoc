@@ -9,9 +9,10 @@
 
 Новий об'єкт цього інтерфейсу можна спробувати отримати викликавши метод `newCondition()` об'єкту інтерфейсу `java.util.concurrent.locks.Lock`,наприклад класу `java.util.concurrent.locks.ReentrantLock` чи `java.util.concurrent.locks.ReentrantReadWriteLock`. Об'єкт `Condition` внутрішньо зв'язаний з об'єктом `Lock`.
 
-.Приклад використання Condition. За мотивом javadoc для java.util.concurrent.locks.Condition
+.Приклад
 [%collapsible%open]
 ====
+.Приклад використання Condition. За мотивом javadoc для java.util.concurrent.locks.Condition
 [source,java,linenos,%collapsible]
 ----
 include::ConditionExp.java[]

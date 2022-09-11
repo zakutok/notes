@@ -10,6 +10,9 @@
 `java.util.concurrent.locks.ReadWriteLock` це інтрефейс.
 В java 18 є його реалізація - клас `ReentrantReadWriteLock`.
 
+.Приклад
+[%collapsible%open]
+====
 .Приклад використання ReentrantReadWriteLock
 [source,java,linenos]
 ----
@@ -35,3 +38,4 @@ in read lock: readLockCount = 7 isWriteLocked = false [1, 2, 3, 4]
 ----
 <1> Наявність декількох блокувань одночасно може бути лише при блокуванні для читання
 <2> Блокування для запису може бути отримане тільки одне й лише тоді коли немає інших блокувань
+====
