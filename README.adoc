@@ -8,6 +8,7 @@ ifndef::env-github[:toc: left]
 :toc-title: Зміст
 :toclevels: 5
 :numbered:
+:text-align: justify
 :listing-number:
 :listing-caption: Лістинг
 :figure-caption: Рисунок
