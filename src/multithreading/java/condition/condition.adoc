@@ -2,12 +2,12 @@
 
 Термін condition також відомий як condition queues або condition variables.
 Він описує сутність яка зокрема надає можливість організовувати потоки в чергу за ознакою спільної умови настання якої ці потоки очікують.
-Ключовою властивістю цієї сутності є можливість *атомарного* вивільнення блокування й переведення потоку в режим очікування у черзі аналогічно методу `Object.wait()`.
+Ключовою властивістю цієї сутності є можливість *атомарного* вивільнення блокування й переведення потоку в режим очікування у черзі аналогічно методам `Object.wait*`.
 
-Інтерфейс `java.util.concurrent.locks.Condition` містить методи `await*()` (`await()`, `awaitUninterruptibly()`, `awaitUntil()`, `awaitNanos()`), `signal()` та `signalAll()` які є аналогічними й покращеними версіями методів `wait()`, `notify()` й `notifyAll()` класу `java.lang.Object`.
-Тож для прикладу ці методи дозволяють задавати timeout або конкретну часову мітку для очікування потоком, розбуджувати потоки в порядку отримання блокування FIFO (при чесному блокуванні) якщо це потрібно - те чого не дозволяють зробити методи `wait()`, `notify()` й `notifyAll()` класу `java.lang.Object()`.
+Інтерфейс `java.util.concurrent.locks.Condition` містить методи `await*` (`await`, `awaitUninterruptibly`, `awaitUntil`, `awaitNanos`), `signal` та `signalAll` які є аналогічними й покращеними версіями методів `wait*`, `notify` й `notifyAll` класу `java.lang.Object`.
+Тож для прикладу ці методи дозволяють задавати конкретну часову мітку для очікування потоком, розбуджувати потоки в порядку отримання блокування FIFO (при чесному блокуванні) якщо це потрібно - те чого не дозволяють зробити методи `wait*`, `notify` й `notifyAll` класу `java.lang.Object`.
 
-Новий об'єкт цього інтерфейсу можна спробувати отримати викликавши метод `newCondition()` об'єкту інтерфейсу `java.util.concurrent.locks.Lock`,наприклад класу `java.util.concurrent.locks.ReentrantLock` чи `java.util.concurrent.locks.ReentrantReadWriteLock`. Об'єкт `Condition` внутрішньо зв'язаний з об'єктом `Lock`.
+Новий об'єкт цього інтерфейсу можна спробувати отримати викликавши метод `newCondition` об'єкту інтерфейсу `java.util.concurrent.locks.Lock`,наприклад класу `java.util.concurrent.locks.ReentrantLock` чи `java.util.concurrent.locks.ReentrantReadWriteLock`. Об'єкт `Condition` внутрішньо зв'язаний з об'єктом `Lock`.
 
 .Приклад
 [%collapsible%open]
