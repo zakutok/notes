@@ -60,6 +60,13 @@ if [[ $INPUT_SLIDES_SKIP_ASCIIDOCTOR_BUILD == false ]]; then
 #    find . -name "*.svg" -exec git add -f {} \;
 #    find . -name "*.md" -exec echo {} \;
 
+    lynx --dump -display_charset UTF-8  ./**/*.html
+    echo -n 'var data =' > /common/post-data.js
+    find . -name "*.txt" -exec sh -c 'jq -R -s "{ref: \"${0%.txt}.html " , content:.}" "${0}"' {} \; | jq -s '.' >> /common/post-data.js
+    find . -name "*.json" -exec git rm -f --cached {} \;
+    find . -name "*.txt" -exec git rm -f --cached {} \;
+    find . -name "*.js" -exec git add -f {} \;
+
     find . -name "*$INPUT_ADOC_FILE_EXT" -exec git rm -f --cached {} \;
 fi
 

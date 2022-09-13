@@ -1,0 +1,26 @@
+<script src="https://unpkg.com/lunr/lunr.js"></script>
+<script src="post-data.js"></script>
+<script src="search.js"></script>
+<script>
+        function respondToSearchBoxClick(){
+            var query = document.querySelector("#search-box").value
+            var searchResponse = index.search(query)
+            var postPaths = searchResponse.map((item) => item.ref)
+            var results = postPaths.map((path) => data.find((post) => post.path === path))
+
+            document.querySelector("#search-results").innerHTML = results.map((post) => {
+                return `
+                <li><a href="/${post.path}">${post.title}</a></li>
+                `
+            }).join("")
+        }
+    </script>
+<div id="app">
+    <label for="search-box">Search for a post:</label>
+    <input type="text" id="search-box">
+    <button onclick="respondToSearchBoxClick()">Search</button>
+
+    <ul id="search-results">
+
+    </ul>
+</div>
