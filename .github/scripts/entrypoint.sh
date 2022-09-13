@@ -60,11 +60,10 @@ if [[ $INPUT_SLIDES_SKIP_ASCIIDOCTOR_BUILD == false ]]; then
 #    find . -name "*.svg" -exec git add -f {} \;
 #    find . -name "*.md" -exec echo {} \;
 
-    find . -name "*.html" -maxdepth 1 -exec sh -c 'lynx --dump -display_charset UTF-8 "${0}" > "${0%.html}.txt"' {} \;
-    echo -n 'var data=' > ./common/post-data.js
-    find . -name "*.txt" -maxdepth 1 -exec sh -c 'jq -R -s "{path: \"${0%.txt}.html\", content:.}" "${0}"' {} \; | jq -s '.' >> ./common/post-data.js
-#    find . -name "*.txt" -exec git rm -f --cached {} \;
-    find . -name "*.js" -exec git add -f {} \;
+#    find . -name "*.html" -maxdepth 1 -exec sh -c 'lynx --dump -display_charset UTF-8 "${0}" > "${0%.html}.txt"' {} \;
+#    echo -n 'var data=' > ./common/post-data.js
+#    find . -name "*.txt" -maxdepth 1 -exec sh -c 'jq -R -s "{path: \"${0%.txt}.html\", content:.}" "${0}"' {} \; | jq -s '.' >> ./common/post-data.js
+#    find . -name "*.js" -exec git add -f {} \;
 
     find . -name "*$INPUT_ADOC_FILE_EXT" -exec git rm -f --cached {} \;
 fi

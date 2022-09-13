@@ -1,23 +1,2 @@
 <link rel="icon" href="./common/favicon.png">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_HTMLorMML"></script>
-<script src="https://unpkg.com/lunr/lunr.js"></script>
-<script src="lunr.stemmer.support.js"></script>
-<script src="lunr.multi.js"></script>;
-<script src="lunr.ua.js"></script>
-<script src="./common/post-data.js"></script>
-<script src="./common/search.js"></script>
-<script>
-        function respondToSearchBoxClick(){
-            var query = document.querySelector("#search-box").value
-            var searchResponse = index.search(query)
-            var postPaths = searchResponse.map((item) => item.ref)
-            var results = postPaths.map((path) => data.find((post) => post.path === path))
-
-            document.querySelector("#search-results").innerHTML = results.map((post) => {
-                return `
-                <li><a href="${post.path}">${post.path}</a></li>
-                `
-            }).join("")
-        }
-
-</script>

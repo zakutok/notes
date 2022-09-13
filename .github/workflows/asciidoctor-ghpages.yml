@@ -54,8 +54,8 @@ jobs:
 #      - name: install pandoc
 #        run: sudo apt install pandoc
 
-      - name: install lynx
-        run: sudo apt-get install lynx
+#      - name: install lynx
+#        run: sudo apt-get install lynx
 
       - name: run build script
         run: ./.github/scripts/entrypoint.sh
