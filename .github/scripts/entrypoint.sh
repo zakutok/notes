@@ -49,7 +49,7 @@ eval "$INPUT_PRE_BUILD"
 
 if [[ $INPUT_SLIDES_SKIP_ASCIIDOCTOR_BUILD == false ]]; then
     echo "Converting AsciiDoc files to HTML"
-    find . -name "*$INPUT_ADOC_FILE_EXT" -exec asciidoctor -r asciidoctor-multipage -r asciidoctor-diagram -b multipage_html5 -a multipage-level=2 $INPUT_ASCIIDOCTOR_PARAMS {} \;
+    find . -name "*$INPUT_ADOC_FILE_EXT" -maxdepth 1 -exec asciidoctor -r asciidoctor-multipage -r asciidoctor-diagram -b multipage_html5 -a multipage-level=2 $INPUT_ASCIIDOCTOR_PARAMS {} \;
     find . -name "README.html" -execdir ln -s "README.html" "index.html" \;
 
 #    find . -name "*.adoc" -print0 | xargs -0 sed -i "/^\s*include::.*\.adoc.*$/d"
@@ -62,7 +62,7 @@ if [[ $INPUT_SLIDES_SKIP_ASCIIDOCTOR_BUILD == false ]]; then
 
     find . -name "*.html" -maxdepth 1 -exec sh -c 'lynx --dump -display_charset UTF-8 "${0}" > "${0%.html}.txt"' {} \;
     echo -n 'var data=' > ./common/post-data.js
-    find . -name "*.txt" -maxdepth 1 -exec sh -c 'jq -R -s "{ref: \"${0%.txt}.html\", content:.}" "${0}"' {} \; | jq -s '.' >> ./common/post-data.js
+    find . -name "*.txt" -maxdepth 1 -exec sh -c 'jq -R -s "{path: \"${0%.txt}.html\", content:.}" "${0}"' {} \; | jq -s '.' >> ./common/post-data.js
 #    find . -name "*.txt" -exec git rm -f --cached {} \;
     find . -name "*.js" -exec git add -f {} \;
 
