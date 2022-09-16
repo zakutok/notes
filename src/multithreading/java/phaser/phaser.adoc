@@ -1,0 +1,30 @@
+=== Phaser
+
+Конструкція Phaser узагальнює собою CountDownLatch і Semaphore, а також має свої особливості оскільки може використовуватися для змінної кількості учасників (потоків) під час роботи.
+Метод `java.util.concurrent.Phaser.onAdvance` викликається при здійсненні фазового переходу (інкременту змінної phase) і його можна перевизначити для задавання умов за яких Phaser повинен закінчити роботу - для цього цей метод повинен повернути значення `true`.
+
+.Приклад
+[%collapsible%open]
+====
+.Приклад використання Phaser
+[source,java,linenos]
+----
+include::PhaserExp.java[]
+----
+
+.Вивід консолі
+[source,bash,linenos]
+----
+-----alternativeToCountDownLatch------
+before sleep
+after sleep
+t8 t3 t5 t0 t7 t2 t4 t6 t1 t9
+-----recurrentBatchExecution------
+0 : t0 t1 t2 t3 t4 t5 t6 t7 t8 t9
+1 : t9 t8 t2 t6 t7 t5 t0 t1 t3 t4
+2 : t5 t1 t6 t0 t8 t2 t3 t4 t9 t7
+3 : t7 t4 t0 t2 t3 t8 t5 t9 t1 t6
+4 : t6 t9 t5 t4 t1 t7 t8 t2 t3 t0
+5 : end
+----
+====
