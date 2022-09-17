@@ -1,5 +1,5 @@
 :docinfodir: common
-:docinfo: shared
+:docinfo: shared, private
 :nofooter:
 :stem:
 :icons: font
@@ -22,7 +22,7 @@ ifdef::env-github,env-browser[]
 :warning-caption: :warning:
 endif::[]
 
-= Замітки
+= Нотатки
 
 include::src/multithreading/multithreading.adoc[]
 
