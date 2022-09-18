@@ -137,7 +137,7 @@ public class PhaserExample {
                             do {
                                 var phase = parrent.arriveAndAwaitAdvance();
                                 if (level == 1) {
-                                    Thread.sleep(4_000);
+                                    Thread.sleep(2_000);
                                 }
 
                                 System.out.println(parrent + " " + phase + " " + resource.incrementAndGet());
