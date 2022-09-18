@@ -141,14 +141,12 @@ public class PhaserExample {
                                 }
 
                                 System.out.println(parrent + " " + phase + " " + resource.incrementAndGet());
-//                                System.out.print(parrent + " " + resource.incrementAndGet() + " ");
                             } while (!parrent.isTerminated());
 
                             return null;
                         }
                 );
             }
-//            System.out.println(parrent);
         }
     }
 
