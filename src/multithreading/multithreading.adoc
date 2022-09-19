@@ -1,5 +1,4 @@
 == Багатопоточність
-:description: Розділ про багатопоточність
 
 //include::java/fork_join/fork_join.adoc[]
 
