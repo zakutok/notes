@@ -1,5 +1,6 @@
 :docinfodir: common
 :docinfo: shared, private
+:docinfosubs: attributes
 :nofooter:
 :stem:
 :icons: font
