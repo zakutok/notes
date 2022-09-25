@@ -73,6 +73,10 @@ jobs:
         uses: actions/deploy-pages@v1
 
   generate_sitemap:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    # The type of runner that the job will run on
     needs: build_and_deploy
     runs-on: ubuntu-latest
 
