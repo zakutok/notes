@@ -68,6 +68,10 @@ jobs:
         with:
           # Upload entire repository
           path: '.'
+      - name: Generate the sitemap
+        uses: cicirello/generate-sitemap@v1.8.0
+        with:
+          base-url-path: https://zakutok.github.io/
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
