@@ -73,12 +73,14 @@ jobs:
         uses: actions/deploy-pages@v1
 
   generate_sitemap:
+    needs: build_and_deploy
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout the repo
         uses: actions/checkout@v2
         with:
+          ref: gh-pages
           fetch-depth: 0
 
       - name: Generate the sitemap
