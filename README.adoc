@@ -1,7 +1,9 @@
+= Нотатки
 :docinfodir: common
 :docinfo: shared, private
 :nofooter:
 :stem:
+:eqnums: all
 :icons: font
 :source-highlighter: rouge
 ifndef::env-github[:toc: left]
@@ -22,7 +24,7 @@ ifdef::env-github,env-browser[]
 :warning-caption: :warning:
 endif::[]
 
-= Нотатки
+include::src/probability_theory/probability_theory.adoc[]
 
 include::src/multithreading/multithreading.adoc[]
 

@@ -1,0 +1,5 @@
+== Теорія ймовірності
+
+include::combinatorics.adoc[]
+
+include::classic_theory.adoc[]
