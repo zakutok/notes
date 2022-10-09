@@ -40,3 +40,10 @@ in read lock: readLockCount = 7 isWriteLocked = false [1, 2, 3, 4]
 <1> Наявність декількох блокувань одночасно може бути лише при блокуванні для читання
 <2> Блокування для запису може бути отримане тільки одне й лише тоді коли немає інших блокувань
 ====
+
+Щоб розібратися як внутрішньо може бути влаштований механізм ReadWriteLock й створити його власну реалізацію можна почитати статтю <<JakobJenkovReadWriteLocks>>.
+
+[bibliography]
+==== Бібліографія
+
+* [[[JakobJenkovReadWriteLocks, Read / Write Locks in Java by Jakob Jenkov]]] https://jenkov.com/tutorials/java-concurrency/read-write-locks.html
