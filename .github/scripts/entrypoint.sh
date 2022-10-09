@@ -93,6 +93,7 @@ eval "$INPUT_POST_BUILD"
 echo "Adding output files to gh-pages branch."
 if [[ $INPUT_SLIDES_SKIP_ASCIIDOCTOR_BUILD == false ]]; then
     find . -name "*.html" -exec git add -f {} \;
+    find . -name "*.svg" -exec git add -f {} \;
 fi
 
 if [[ $INPUT_PDF_BUILD == true ]]; then
