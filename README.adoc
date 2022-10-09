@@ -12,6 +12,7 @@ ifndef::env-github[:toc: left]
 :numbered:
 :text-align: justify
 :listing-number:
+:example-caption: Приклад
 :listing-caption: Лістинг
 :figure-caption: Рисунок
 ifdef::env-github[:outfilesuffix: .adoc]
