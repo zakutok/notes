@@ -2,7 +2,7 @@ package strings.kic;
 
 import java.util.Arrays;
 
-public class KeyIndexedCountMethod {
+public class KeyIndexedCountingMethod {
 
     public static void main(String[] args) {
 
