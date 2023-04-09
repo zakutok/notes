@@ -15,7 +15,7 @@
 .Приклад
 [%collapsible%open]
 ====
-.Приклад сортування методом Key-indexed count
+.Приклад сортування методом Key-indexed counting
 [source,java,linenos,%collapsible]
 ----
 include::KeyIndexedCountingMethod.java[]

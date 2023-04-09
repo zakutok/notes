@@ -37,7 +37,7 @@ public class LeastSignificantDigit {
     }
 
     private static void kic(List<String> data, int i) {
-        var counts = new int[256];
+        var counts = new int[257];
 
         for (var s : data) {
             counts[s.charAt(i)]++;
