@@ -24,14 +24,10 @@ include::KeyIndexedCountingMethod.java[]
 .Вивід консолі
 [source,bash,linenos]
 ----
-[electric, electric, possible, continue, medicine, occasion, occasion, politics, industry, ceremony, heavenly]
-[politics, electric, electric, possible, heavenly, medicine, ceremony, occasion, occasion, industry, continue]
-[possible, politics, medicine, occasion, occasion, heavenly, continue, ceremony, electric, electric, industry]
-[medicine, heavenly, possible, continue, ceremony, occasion, occasion, industry, politics, electric, electric]
-[occasion, occasion, electric, electric, ceremony, medicine, politics, possible, continue, industry, heavenly]
-[heavenly, occasion, occasion, medicine, industry, electric, electric, politics, continue, ceremony, possible]
-[occasion, occasion, heavenly, medicine, ceremony, electric, electric, industry, politics, continue, possible]
-[ceremony, continue, electric, electric, heavenly, industry, medicine, occasion, occasion, politics, possible]
+[0, 2, 2, 1, 2]
+[0, 2, 4, 5, 7]
+[[d, 1], [g, 1], [b, 2], [e, 2], [f, 3], [a, 4], [c, 4]]
+[[d, 1], [g, 1], [b, 2], [e, 2], [f, 3], [a, 4], [c, 4]]
 ----
 ====
 
