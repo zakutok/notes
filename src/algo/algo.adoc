@@ -1,4 +1,5 @@
 == Алгоритми й структури даних
 
 include::java/strings/kic/kic.adoc[]
+
 include::java/strings/lsd/lsd.adoc[]
