@@ -5,7 +5,9 @@ import com.google.common.collect.ImmutableList;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LeastSignificantDigit {
+public class LeastSignificantDigitFirst {
+
+    private static final int RADIX = 256;
 
     public static void main(String[] args) {
         var input = ImmutableList.of(
@@ -37,7 +39,7 @@ public class LeastSignificantDigit {
     }
 
     private static void kic(List<String> data, int i) {
-        var counts = new int[257];
+        var counts = new int[RADIX + 1];
 
         for (var s : data) {
             counts[s.charAt(i)]++;
@@ -51,7 +53,7 @@ public class LeastSignificantDigit {
 
         for (var s : data) {
             var index = counts[s.charAt(i) - 1]++;
-            aux[index] =  s;
+            aux[index] = s;
         }
 
         for (int k = 0; k < aux.length; k++) {
