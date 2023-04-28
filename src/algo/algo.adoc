@@ -1,7 +1,0 @@
-== Алгоритми й структури даних
-
-include::java/strings/kic/kic.adoc[]
-
-include::java/strings/lsd/lsd.adoc[]
-
-include::java/strings/msd/msd.adoc[]

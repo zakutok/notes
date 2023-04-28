@@ -1,3 +1,0 @@
-== Робота з GitHub Pages
-
-=== Створення репозиторію з GitHub Pages
