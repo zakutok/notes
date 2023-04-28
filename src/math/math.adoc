@@ -1,0 +1,6 @@
+== Математика
+
+include::java/induction/induction.adoc[]
+
+// include::java/sets/sets.adoc[]
+

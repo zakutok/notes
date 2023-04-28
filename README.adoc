@@ -31,4 +31,6 @@ include::src/multithreading/multithreading.adoc[]
 
 include::src/algo/algo.adoc[]
 
+include::src/math/math.adoc[]
+
 //include::src/working_with_github_pages/mwp.adoc[]
